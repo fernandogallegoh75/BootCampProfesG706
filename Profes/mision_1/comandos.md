@@ -20,6 +20,15 @@ crear un entorno virtual en python
 `python -m venv env312`
 activarlo  ``env312\scripts\activate``
 
+
+
 `` deactivate``
 
 ``pip list``
+## Librerrias para python
+`python.exe -m pip install --upgrade pip`
+``pip install pandas numpy matplotlib``
+pandas -> manejo de datos  `pip install pandas`
+numpy -> cálculo matemático `pip install  numpy`
+matplolib ->gráficos `pip install matplotlib`
+
