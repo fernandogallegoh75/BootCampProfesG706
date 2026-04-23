@@ -32,3 +32,5 @@ pandas -> manejo de datos  `pip install pandas`
 numpy -> cálculo matemático `pip install  numpy`
 matplolib ->gráficos `pip install matplotlib`
 
+ pip freeze > requirements.txt
+
