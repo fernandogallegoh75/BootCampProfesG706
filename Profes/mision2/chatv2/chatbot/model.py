@@ -48,4 +48,7 @@ def load_model():
         print("⚠️ No hay modelo guardado. Será necesario entrenarlo")
         return None,None,None
 
-
+def predict_answer(model,vectorizer,unique_answers,user_text):
+    x = vectorizer.transform([user_text])
+    label = model.predict(x)[0]
+    return unique_answers[label]
