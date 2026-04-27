@@ -10,9 +10,7 @@
 git add .  para agregar los archivos a mi git (caja)
 git commit -m "first commit"  Para sellar la caja
 git clone
-`git clone https://github.com/fernan
-
-dogallegoh75/BootCampProfesG706.git`
+`git clone https://github.com/fernandogallegoh75/BootCampProfesG706.git`
 
 
 ``python --version``
