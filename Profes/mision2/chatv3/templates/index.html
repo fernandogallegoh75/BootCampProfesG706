@@ -22,6 +22,22 @@
             display: flex;
             flex-direction: column;
         }
+        #messages{
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 15px;
+        }
+        .msg{margin: 8px 0;}
+        .user{text-align: right; color: blue;}
+        .bot{text-align: left;color: green;}
+        input[type="text"]{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+        }
+
     </style>
 </head>
 <body>
@@ -43,8 +59,15 @@
             if(!text) return;
             messages.innerHTML +=  `<div class="msg user">Tú: ${text}</div>`;
             input.value="";
-
-        })
+        const response = await fetch("/chat",{
+            method:"POST",
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
+            body:`message=${encodeURIComponent(text)}`
+        });
+        const data = await response.json();
+        messages.innerHTML += `<div class="msg bot">Bot: ${data.response}</div>`;
+        messages.scrollTop = messages.scrollHeight;
+        });
     </script>
 </body>
 </html>
