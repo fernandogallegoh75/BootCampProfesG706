@@ -10,3 +10,7 @@ https://colab.research.google.com/drive/1UdriRKJGEVL4A77kf108WTEtT5BOwdFM?usp=sh
 GitHub
 https://github.com/fernandogallegoh75/BootCampProfesG706.git
 
+
+talentotech
+https://talentotech2.com.co/
+
