@@ -15,6 +15,14 @@ def home():
 def energia():
     return render_template("energia.html")
 
+@app.route("/beneficios")
+def bebeficios():
+    return render_template("beneficios.html")
+
+@app.route("/contacto")
+def contacto():
+    return render_template("contacto.html")
+
 @app.route("/mapa")
 def mapa():
     return render_template("mapa.html")
